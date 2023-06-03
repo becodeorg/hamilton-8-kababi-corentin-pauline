@@ -1,0 +1,213 @@
+body {
+  overflow-x: hidden; }
+
+header {
+  background: url("../assets/img/slider/img_bg_slider_home01.jpg") no-repeat;
+  background-size: cover;
+  height: 700px; }
+  header div:first-of-type {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%; }
+  header a {
+    border: 1px solid white;
+    color: white; }
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  width: 50%; }
+.navbar .navbar--link {
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+a {
+  text-decoration: none; }
+
+.chef {
+  background: black;
+  padding: 100px; }
+  .chef h2 {
+    padding-top: 15px;
+    color: white;
+    text-align: center; }
+  .chef h3 {
+    padding-bottom: 15px;
+    color: white;
+    text-align: center; }
+  .chef ul:first-of-type:not(ul.social) {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto; }
+  .chef figure {
+    position: relative; }
+    .chef figure img {
+      display: block; }
+      .chef figure img:hover + figcaption {
+        opacity: 0.8;
+        top: 67%; }
+    .chef figure figcaption {
+      opacity: 0;
+      background: black;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      /*top: -134px;*/
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease; }
+    .chef figure h2 {
+      color: white; }
+    .chef figure a {
+      float: left;
+      color: white;
+      padding: 2px; }
+    .chef figure ul.social {
+      display: flex;
+      flex-direction: row;
+      /*align-items: flex-start;*/
+      justify-content: space-evenly; }
+
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  .chef figure {
+    position: relative; }
+    .chef figure img {
+      display: block; }
+      .chef figure img:hover + figcaption {
+        opacity: 0.8;
+        top: 45%; }
+  .chef ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    /*display: grid;
+    grid-template-columns: auto ;*/
+    /*width: 100%;*/ }
+  .chef figure {
+    margin: 0;
+    width: 100%; }
+    .chef figure img {
+      width: 100%; } }
+@media screen and (min-width: 780px) and (max-width: 992px) {
+  .chef ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    /*display: grid;
+    grid-template-columns: auto ;*/
+    /*width: 100%;*/ }
+  .chef figure {
+    margin: 0;
+    width: 100%; }
+    .chef figure img {
+      width: 100%; }
+      .chef figure img:hover + figcaption {
+        opacity: 0.8;
+        top: 83%; } }
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  .chef {
+    background: green; }
+    .chef ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+    .chef figure {
+      margin: 0;
+      width: 100%; }
+      .chef figure img {
+        display: block;
+        width: 100%; }
+        .chef figure img:hover + figcaption {
+          opacity: 0.8;
+          top: 40%; } }
+@media screen and (max-width: 480px) {
+  .chef {
+    background: cyan; }
+    .chef ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+    .chef figure {
+      margin: 0; }
+      .chef figure img {
+        width: 100%; } }
+.food {
+  background: #F9F6F0;
+  margin: 0;
+  height: 100vh;
+  margin: 0; }
+  .food div {
+    text-align: center;
+    margin: 0;
+    /*padding: 60px;*/ }
+  .food h2 {
+    font-size: 4rem; }
+  .food h3 {
+    font-size: 1.5rem;
+    margin: 0; }
+  .food ul {
+    list-style-type: none;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-auto-rows: auto;
+    /*display: flex;*/
+    /*justify-content: space-between;*/ }
+  .food li {
+    background: white;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.5rem;
+    transition: all 1s ease-in-out; }
+    .food li:hover {
+      background: #c8a96a; }
+    .food li:hover i {
+      color: white;
+      transform: rotateY(360deg); }
+  .food i {
+    color: #c8a96a;
+    font-size: 45px;
+    position: relative;
+    bottom: 40px;
+    transition: all 1s ease-in-out; }
+
+@media screen and (min-width: 1024px) {
+  .food ul {
+    display: flex;
+    justify-content: space-around; }
+  .food li {
+    width: 200px; } }
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+  .food ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem; } }
+@media screen and (max-width: 780px) {
+  .food ul {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */

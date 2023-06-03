@@ -1,0 +1,14 @@
+.navbar{
+  & ul{
+    list-style-type: none;
+    display: flex;
+    width: 50%;
+
+  }
+  & .navbar--link{
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

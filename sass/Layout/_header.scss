@@ -1,0 +1,19 @@
+body{
+  overflow-x: hidden;
+}
+header{
+  background: url("../assets/img/slider/img_bg_slider_home01.jpg") no-repeat;
+  background-size:cover;
+  height: 700px;
+  & div:first-of-type{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+
+  }
+  & a{
+  border: 1px solid white;
+    color: white;
+  }
+
+}

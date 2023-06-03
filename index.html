@@ -3,58 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<<device-width>>, initial-scale=1.0">
+    <meta name="viewport", initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32aee59745.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sass/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <figure>
-            <img src="assets/img/logo/logo.png" alt="">
-        </figure>
-        
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Page</a>
-                    </li>
-                    <li>
-                        <a href="#">Shop</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+        <div>
+            <figure>
+                <img src="assets/img/logo/logo.png" alt="">
+            </figure>
+
             <section>
-                <div>
-                    +012(345)6789
-                </div>
-                <a href="#">Book a table</a>
+                <nav class="navbar">
+                    <ul>
+                        <li class="navbar--items">
+                            <a href="#"  class="navbar--link">Home</a>
+                        </li>
+                        <li class="navbar--items">
+                            <a href="#" class="navbar--link">About</a>
+                        </li>
+                        <li class="navbar--items">
+                            <a href="#" class="navbar--link">Page</a>
+                        </li>
+                        <li class="navbar--items">
+                            <a href="#" class="navbar--link">Shop</a>
+                        </li>
+                        <li class="navbar--items">
+                            <a href="#" class="navbar--link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section>
+                    <div style="color: white">
+                        +012(345)6789
+                    </div>
+                    <a href="#">Book a table</a>
+                </section>
             </section>
-        </section>
+        </div>
         <section>
            <h1>Best quality food</h1>
-           <a href="#">Explore your menu</a>
+           <a href="#"  class="">Explore your menu</a>
         </section>
     </header>
     <main>
-        <section>
-            <h2>Choose Your Best category</h2>
-            <h3>Best foods for you & family</h3>
+        <section class="food">
+            <div>
+                <h2>Choose Your Best category</h2>
+                <h3>Best foods for you & family</h3>
+            </div>
+
             <ul>
-                <li>Chessburger</li>
-                <li>Pizza Slice</li>
-                <li>Coffe-Cup</li>
-                <li>Chicken leg</li>
-                <li>Energy drink </li>
-                <li>Shrimp </li>
+                <li>Chessburger
+                    <i class="fa-solid fa-burger-cheese" ></i>
+                </li>
+                <li>Pizza Slice
+                    <i class="fa-sharp fa-solid fa-pizza"></i></li>
+                <li>Coffe-Cup
+                    <i class="fa-solid fa-mug-hot"></i></li>
+                <li>Chicken leg
+                    <i class="fa-solid fa-drumstick"></i></li>
+                <li>Energy drink
+                    <i class="fa-solid fa-martini-glass-citrus"></i></li>
+                <li>Shrimp
+                    <i class="fa-solid fa-shrimp"></i></li>
             </ul>
         </section>
         <section>
@@ -213,29 +227,72 @@
               </div> 
               <a href="#">View more photos</a>
         </section>
-        <section>
-            <h2>Meet Professional chefs</h2>
-            <h3>Best foods for you & family</h3>
+        <section class="chef">
+            <div>
+                <h2>Meet Professional chefs</h2>
+                <h3>Best foods for you & family</h3>
+            </div>
+
             <section>
                 <ul>
                     <li>
                         <figure>
                             <img src="assets/img/team/img1team.jpg">
+                            <figcaption>
+                                <h2>Thomas.M</h2>
+                                <p>main chef</p>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
                             <img src="assets/img/team/img2team.jpg">
+                            <figcaption>
+                                <h2>Thomas.M</h2>
+                                <p>main chef</p>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
                             <img src="assets/img/team/img3team.jpg">
+                            <figcaption>
+                                <h2>Thomas.M</h2>
+                                <p>main chef</p>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
                             <img src="assets/img/team/img4team.jpg">
+                            <figcaption>
+                                <h2>Thomas.M</h2>
+                                <p>main chef</p>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </figcaption>
                         </figure>
                     </li>
                 </ul>
@@ -247,11 +304,11 @@
             <article>
                 <img href="assets/img/blog/img3blohhome01.jpg" alt="">
                 <div>
-                    <img href="./assets/img/blog/user-regular.svg" alt="">
+                    <img href="assets/img/blog/user-regular.svg" alt="">
                     <p>BY WILLIAMSON</p>
                 </div>
                 <div>
-                    <img href="./assets/img/blog/calendar-days-regular.svg" alt="">
+                    <img href="assets/img/blog/calendar-days-regular.svg" alt="">
                     <p>25 AUG 2021</p>
                 </div>
                 <div>
@@ -264,11 +321,11 @@
             <article>
                 <img href="assets/img/blog/img2blohhome02.jpg" alt="">
                 <div>
-                    <img href="./assets/img/blog/user-regular.svg" alt="">
+                    <img href="assets/img/blog/user-regular.svg" alt="">
                     <p>BY WILLIAMSON</p>
                 </div>
                 <div>
-                    <img href="./assets/img/blog/calendar-days-regular.svg" alt="">
+                    <img href="assets/img/blog/calendar-days-regular.svg" alt="">
                     <p>25 AUG 2021</p>
                 </div>
                 <div>
@@ -281,11 +338,11 @@
             <article>
                 <img href="assets/img/blog/img1blohhome01.jpg" alt="">
                 <div>
-                    <img href="./assets/img/blog/user-regular.svg" alt="">
+                    <img href="assets/img/blog/user-regular.svg" alt="">
                     <p>BY WILLIAMSON</p>
                 </div>
                 <div>
-                    <img href="./assets/img/blog/calendar-days-regular.svg" alt="">
+                    <img href="assets/img/blog/calendar-days-regular.svg" alt="">
                     <p>25 AUG 2021</p>
                 </div>
                 <div>
