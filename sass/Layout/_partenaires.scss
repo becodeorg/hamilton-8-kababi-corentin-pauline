@@ -1,0 +1,11 @@
+.partenaires{
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  & img.partenaires--img{
+    filter: grayscale(100%);
+    &:hover{
+      filter: grayscale(0) ;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.btn{
+  background: white;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 1s ease-in-out;
+  &:hover{
+    background:#c8a96a ;
+  }
+}
