@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=<<device-width>>, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/fb31e73e7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
 
     <title>Document</title>
 </head>
@@ -310,11 +317,13 @@
     </main>
 
     <footer>
-        <figure>
-            <img class="logo"src="assets/img/logo/logo2.png" alt="logo-noir">
-        </figure>
-        <div class="footer">
-            <ul>
+        <div class="footer_logo">
+            <figure>
+                <img class="logo"src="assets/img/logo/logo2.png" alt="logo-noir">
+            </figure>
+        </div>    
+        <div class="footer_column">
+            <ulclass=" footer_list">
                 <li class="title_footer">
                     <h3>About</h3>
                 </li>
@@ -335,8 +344,8 @@
                 </li>
             </ul>
         </div>
-        <div class="footer">
-            <ul>
+        <div class="footer_column">
+            <ul class="footer_list">
                 <li class="title_footer">
                     <h3>Facilities</h3>
                 </li>
@@ -357,7 +366,7 @@
                 </li>
             </ul>
         </div>
-        <div class="footer">
+        <div class="footer_column">
             <h3 class="title_footer">Newsletter</h3>
             <p>Dolor sit amet consectetur adipisicing elit. Fugit amet praesentium, deleniti ullam nesciunt at voluptas labore, delectus excepturi unde, adipisci doloribus ex architecto dolorum quia? Nesciunt voluptatum rerum culpa!</p>
             <form method="post" action="mailto:email@example.com" >
@@ -365,23 +374,27 @@
                 <button><i class="fa-solid fa-arrow-right"></i></button>
             </form>
         </div>
-        <div class="footer">
+        <div class="footer_column">
             <h3 class="title_footer">Contact</h3>
             <p><i class="fa-solid fa-location-dot"></i>56 Main Street, D-Block, 2nd Floor, Melbourne, Australia</p>
             <p><i class="fa-regular fa-envelope-open"></i>support@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>+012 (345) 67 899</p>
             <p><i class="fa-regular fa-clock"></i>8 am - 6 pm</p>
         </div>
-        <img src="../assets/img/footer/iconup2x.png" alt="icon-of-a-fork">
-        <div>
-            <p>Copyright © 2021 The Kababi - Restaurant HTML Template. Designed by <a href="#">Themsflat</a></p>
-        </div>
-        <div>
-            <a><i class="fa-brands fa-facebook-f"></i></a>
-            <a><i class="fa-brands fa-twitter"></i></a>
-            <a><i class="fa-brands fa-youtube"></i></a>
-            <a><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+        <img class="footer_fork" src="../assets/img/footer/iconup2x.png" alt="icon-of-a-fork">
+        <div class="footer_fdp">  
+            <div>
+                <p>Copyright © 2021 The Kababi - Restaurant HTML Template. Designed by <a href="#">Themsflat</a></p>
+            </div>
+            <div>
+                <ul class="footer_socials">
+                   <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div> 
     </footer>
 </body>
 </html>
