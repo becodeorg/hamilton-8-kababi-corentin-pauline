@@ -1,4 +1,30 @@
 @mixin alignement($position){
   text-align: $position;
 }
+@mixin border-radius($px)
+{
+  border-radius: $px;
+}
+
+@mixin position($top:0,$right:0,$bottom:0,$left:0){
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+
+@mixin margin($top:0,$right:0,$bottom:0,$left:0){
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+@mixin padding($top:0,$right:0,$bottom:0,$left:0){
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
 

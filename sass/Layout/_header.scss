@@ -13,7 +13,7 @@ header{
 
 }
 .header--nav{
-  padding-top:20px;
+  @include  padding($top:20px);
   width: 70%;
   display: flex;
   /*justify-content: space-between;*/
@@ -30,22 +30,21 @@ header{
   text-transform: uppercase;
  font-size: 5rem;
   line-height: 120px;
-  margin: 30px;
+  @include margin(30px,30px,30px,30px);
   position: relative;
-  left: 150px;
-  top:150px;
+  @include position($left:150px,$top:150px);
+
 }
 .main--heading + a{
   position: relative;
-  left: 150px;
-  top:180px;
+  @include position($left:150px,$top:180px);
 }
 
 .main--heading+a{
   color: white;
   border: 1px solid white;
-  padding: 20px;
-  margin-left: 30px;
+  @include padding(20px,20px,20px,20px);
+  @include margin($left:30px);
   transition: all 1s ease-in-out;
   &:hover{
     background: white;
@@ -56,8 +55,8 @@ header{
   color: white;
   background: #c8a96a;
   border: 1px solid #c8a96a;
-  padding: 20px;
-  margin-left: 30px;
+  @include padding(20px, 20px,20px,20px);
+  @include margin(30px, 30px,30px,30px);
   transition: all 1s ease-in-out;
   border-radius: 10px;
   &:hover{
