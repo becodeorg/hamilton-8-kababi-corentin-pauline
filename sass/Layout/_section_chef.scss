@@ -1,6 +1,6 @@
 .chef{
   background: black;
-  padding: 100px;
+  //padding: 100px;
 
   & h2{
     padding-top: 15px;
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-around;
     width: 80%;
-    margin: auto;
+    //margin: auto;
   }
   & figure{
     position: relative;
@@ -94,17 +94,19 @@
     }
   }
 }
-@media screen and (min-width: 780px) and (max-width: 992px)
+@media screen and (min-width: 768px) and (max-width: 992px)
 {
   .chef{
     & ul{
       margin: 0;
       padding: 0;
       list-style-type: none;
-      display: flex;
+      display: grid;
+      grid-template-columns: auto ;
+      /*display: flex;
       flex-direction: column;
 
-      gap: 60px;
+      gap: 60px;*/
       /*display: grid;
       grid-template-columns: auto ;*/
       /*width: 100%;*/
@@ -125,16 +127,23 @@
     }
   }
 
-@media screen and (min-width: 480px)  and (max-width: 780px) {
+@media screen and (min-width: 578px)  and (max-width: 768px) {
   .chef{
     background: green;
+    & section:first-of-type{
+      width: 100%;
+    }
     & ul{
-      margin: 0;
-      padding: 0;
+
+      margin: 0px;
+      padding: 0px;
       list-style-type: none;
       display: flex;
       flex-direction: column;
       width: 100%;
+    }
+    & li {
+      margin-top: 20px;
     }
     & figure{
       margin:0;
@@ -146,7 +155,7 @@
 
         &:hover + figcaption {
           opacity: 0.8;
-          top: 40%;
+          top: 80%;
         }
       }
     }

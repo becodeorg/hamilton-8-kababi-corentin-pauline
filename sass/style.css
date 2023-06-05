@@ -85,8 +85,7 @@ a {
   text-decoration: none; }
 
 .chef {
-  background: black;
-  padding: 100px; }
+  background: black; }
   .chef h2 {
     padding-top: 15px;
     color: white;
@@ -99,8 +98,7 @@ a {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    width: 80%;
-    margin: auto; }
+    width: 80%; }
   .chef figure {
     position: relative; }
     .chef figure img {
@@ -153,14 +151,17 @@ a {
     width: 100%; }
     .chef figure img {
       width: 100%; } }
-@media screen and (min-width: 780px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .chef ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+    display: grid;
+    grid-template-columns: auto;
+      /*display: flex;
+      flex-direction: column;
+
+      gap: 60px;*/
     /*display: grid;
     grid-template-columns: auto ;*/
     /*width: 100%;*/ }
@@ -172,16 +173,20 @@ a {
       .chef figure img:hover + figcaption {
         opacity: 0.8;
         top: 83%; } }
-@media screen and (min-width: 480px) and (max-width: 780px) {
+@media screen and (min-width: 578px) and (max-width: 768px) {
   .chef {
     background: green; }
+    .chef section:first-of-type {
+      width: 100%; }
     .chef ul {
-      margin: 0;
-      padding: 0;
+      margin: 0px;
+      padding: 0px;
       list-style-type: none;
       display: flex;
       flex-direction: column;
       width: 100%; }
+    .chef li {
+      margin-top: 20px; }
     .chef figure {
       margin: 0;
       width: 100%; }
@@ -190,7 +195,7 @@ a {
         width: 100%; }
         .chef figure img:hover + figcaption {
           opacity: 0.8;
-          top: 40%; } }
+          top: 80%; } }
 @media screen and (max-width: 480px) {
   .chef {
     background: cyan; }
@@ -208,7 +213,6 @@ a {
 .food {
   background: #F9F6F0;
   margin: 0;
-  height: 100vh;
   margin: 0; }
   .food div {
     text-align: center;
@@ -221,7 +225,6 @@ a {
     margin: 0; }
   .food ul {
     list-style-type: none;
-    width: 80%;
     margin: auto;
     display: grid;
     grid-auto-rows: auto;
@@ -249,23 +252,36 @@ a {
     bottom: 40px;
     transition: all 1s ease-in-out; }
 
-@media screen and (min-width: 1024px) {
-  .food ul {
-    display: flex;
-    justify-content: space-around; }
-  .food li {
-    width: 200px; } }
-@media screen and (min-width: 780px) and (max-width: 1024px) {
+@media screen and (min-width: 1200px) {
+  .food {
+    height: 200vh; }
+    .food ul {
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-around; }
+    .food li {
+      width: 200px; } }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .food {
+    height: 200vh; }
+    .food ul {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 1rem; } }
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .food ul {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1rem; } }
-@media screen and (max-width: 780px) {
-  .food ul {
-    margin: 0px;
-    padding: 0px;
-    display: grid;
-    grid-template-columns: auto;
-    gap: 1rem; } }
+@media screen and (min-width: 578px) and (max-width: 768px) {
+  .food {
+    display: block; }
+    .food ul {
+      margin: 0px;
+      padding: 0px; }
+    .food li {
+      margin: 10px;
+      display: flex;
+      align-items: center; } }
 
 /*# sourceMappingURL=style.css.map */

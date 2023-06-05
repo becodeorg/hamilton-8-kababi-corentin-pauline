@@ -1,7 +1,7 @@
 .food{
   background: #F9F6F0;
   margin: 0;
-  height: 100vh;
+
   margin: 0;
   & div {
     @include alignement(center);
@@ -18,7 +18,7 @@
   }
   & ul{
     list-style-type: none;
-    width: 80%;
+    //width: 80%;
     margin: auto;
     display: grid;
     grid-auto-rows: auto;
@@ -53,10 +53,12 @@
   }
 }
 
-@media screen and (min-width: 1024px)
+@media screen and (min-width: 1200px)
 {
   .food{
+    height: 200vh;
     & ul{
+      margin-top: 100px;
       display:flex;
       justify-content: space-around;
     }
@@ -67,7 +69,19 @@
 }
 
 
-@media screen  and (min-width: 780px) and (max-width: 1024px){
+@media screen  and (min-width: 992px) and (max-width: 1200px){
+  .food {
+    height: 200vh;
+    & ul {
+      display: grid;
+      grid-template-columns: auto auto auto ;
+      gap: 1rem;
+    }
+  }
+}
+
+
+@media screen  and (min-width: 768px) and (max-width: 992px){
   .food {
     & ul {
       display: grid;
@@ -78,14 +92,22 @@
 }
 
 
-@media screen  and (max-width: 780px) {
+@media screen and (min-width: 578px)  and (max-width: 768px) {
   .food {
-    & ul {
+    & ul{
       margin: 0px;
       padding: 0px;
-      display: grid;
-      grid-template-columns: auto ;
-      gap: 1rem;
     }
+    display: block;
+     & li{
+       margin: 10px;
+      display: flex;
+       align-items: center;
+       //text-align: center;
+
+
+
+    }
+
   }
 }
