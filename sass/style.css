@@ -27,4 +27,8 @@
   grid-template-columns: 1fr 1fr 2fr;
   gap: 0; }
 
+@media only screen and (max-width: 600px) {
+  .gallery--section div:first-of-type, .gallery--section div:last-of-type {
+    display: block; } }
+
 /*# sourceMappingURL=style.css.map */
