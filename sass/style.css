@@ -1,44 +1,28 @@
 /*
-Error: It's not clear which file to import for '@import "Layout/section2"'.
-       Candidates:
-         Layout/_section2.scss
-         Layout/section2.scss
-       Please delete or rename all but one of these files.
-        on line 9 of sass/style.scss
+Error: Invalid CSS after "...ort "Utils/btn"": expected "{", was ";"
+        on line 3 of sass/style.scss
 
-4: @import "Layout/_header.scss";
-5: @import "Layout/_navbar.scss";
-6: @import "Utils/_utils.scss";
-7: @import "Layout/section_chef";
-8: @import "Layout/section_food";
-9: @import "Layout/section2";
+1: <<<<<<< HEAD
+2: 
+3: @import "Utils/btn";
+4: @import "Utils/_mixin";
+5: @import "Layout/_header.scss";
+6: @import "Layout/_navbar.scss";
+7: @import "Utils/_utils.scss";
+8: @import "Layout/section_chef";
 
 Backtrace:
-sass/style.scss:9
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+sass/style.scss:3
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
 C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
 C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
 C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
@@ -59,4 +43,4 @@ C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: It's not clear which file to import for '@import \"Layout/section2\"'.\A        Candidates:\A          Layout/_section2.scss\A          Layout/section2.scss\A        Please delete or rename all but one of these files.\A         on line 9 of sass/style.scss\A \A 4: @import \"Layout/_header.scss\";\A 5: @import \"Layout/_navbar.scss\";\A 6: @import \"Utils/_utils.scss\";\A 7: @import \"Layout/section_chef\";\A 8: @import \"Layout/section_food\";\A 9: @import \"Layout/section2\";"; }
+  content: "Error: Invalid CSS after \"...ort \"Utils/btn\"\": expected \"{\", was \";\"\A         on line 3 of sass/style.scss\A \A 1: <<<<<<< HEAD\A 2: \A 3: @import \"Utils/btn\";\A 4: @import \"Utils/_mixin\";\A 5: @import \"Layout/_header.scss\";\A 6: @import \"Layout/_navbar.scss\";\A 7: @import \"Utils/_utils.scss\";\A 8: @import \"Layout/section_chef\";"; }
