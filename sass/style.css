@@ -19,10 +19,15 @@
   justify-content: space-around;
   overflow: hidden;
   margin: auto; }
+  .blog section:first-of-type a {
+    top: 550px;
+    left: 300px;
+    position: absolute; }
 
 .blog--article {
   background-color: rgba(200, 169, 106, 0.1);
-  padding: 20px; }
+  padding: 20px;
+  position: relative; }
   .blog--article div.blog--article--informations {
     display: flex;
     justify-content: space-around; }
