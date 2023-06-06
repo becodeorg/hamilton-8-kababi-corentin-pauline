@@ -129,12 +129,12 @@
 
 @media screen and (min-width: 578px)  and (max-width: 768px) {
   .chef{
-    background: green;
+
     & section:first-of-type{
+      /*width: 100%;*/
       width: 100%;
     }
     & ul{
-
       margin: 0px;
       padding: 0px;
       list-style-type: none;

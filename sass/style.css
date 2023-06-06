@@ -174,28 +174,27 @@ a {
         opacity: 0.8;
         top: 83%; } }
 @media screen and (min-width: 578px) and (max-width: 768px) {
-  .chef {
-    background: green; }
-    .chef section:first-of-type {
+  .chef section:first-of-type {
+    /*width: 100%;*/
+    width: 100%; }
+  .chef ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .chef li {
+    margin-top: 20px; }
+  .chef figure {
+    margin: 0;
+    width: 100%; }
+    .chef figure img {
+      display: block;
       width: 100%; }
-    .chef ul {
-      margin: 0px;
-      padding: 0px;
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      width: 100%; }
-    .chef li {
-      margin-top: 20px; }
-    .chef figure {
-      margin: 0;
-      width: 100%; }
-      .chef figure img {
-        display: block;
-        width: 100%; }
-        .chef figure img:hover + figcaption {
-          opacity: 0.8;
-          top: 80%; } }
+      .chef figure img:hover + figcaption {
+        opacity: 0.8;
+        top: 80%; } }
 @media screen and (max-width: 480px) {
   .chef {
     background: cyan; }
@@ -302,9 +301,10 @@ a {
     background: white; }
 
   .section2 ul {
-    display: flex; }
+    display: flex;
+    justify-content: space-around; }
     .section2 ul .img--center img {
-      bottom: 220px;
+      bottom: 150px;
       border-radius: 50%; } }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .section2 ul {
@@ -319,6 +319,12 @@ a {
     .section2 ul img {
       width: 100%; } }
 @media screen and (min-width: 578px) and (max-width: 768px) {
+  .section2 ul {
+    display: flex;
+    flex-direction: column; }
+    .section2 ul img {
+      width: 100%; } }
+@media screen and (max-width: 578px) {
   .section2 ul {
     display: flex;
     flex-direction: column; }

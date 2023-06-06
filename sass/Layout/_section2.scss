@@ -22,8 +22,9 @@
   }
   .section2 ul {
     display: flex;
+    justify-content: space-around;
     & .img--center img{
-      bottom: 220px;
+      bottom: 150px;
       border-radius: 50%;
     }
   }
@@ -61,4 +62,13 @@
     }
   }
 
+}
+@media screen and (max-width: 578px) {
+  .section2 ul {
+    display: flex;
+    flex-direction: column;
+    &  img{
+      width: 100%;
+    }
+  }
 }
