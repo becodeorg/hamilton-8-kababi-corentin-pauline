@@ -101,11 +101,13 @@ flex-direction: row;
 @media screen and (max-width: 960px) {
   .partenaires {
     display: grid;
-    grid-template-columns: auto auto; } }
+    grid-template-columns: auto auto;
+    gap: 0; } }
 @media screen and (max-width: 600px) {
   .partenaires {
     display: grid;
-    grid-template-columns: auto; } }
+    grid-template-columns: auto;
+    justify-items: center; } }
 @media screen and (max-width: 400px) {
   .partenaires {
     width: 100%; } }

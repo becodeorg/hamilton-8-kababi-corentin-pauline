@@ -40,10 +40,12 @@
   @include screen(med-small) {
     display: grid;
     grid-template-columns: auto auto ;
+    gap: 0;
   }
   @include screen(small) {
     display: grid;
-    grid-template-columns: auto  ;
+    grid-template-columns: auto ;
+    justify-items: center;
   }
   @include screen(custom, max, 400) {
     width: 100%;
