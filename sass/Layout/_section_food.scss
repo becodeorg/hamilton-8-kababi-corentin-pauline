@@ -1,0 +1,114 @@
+.food{
+  background: #F9F6F0;
+  margin: 0;
+
+  margin: 0;
+  & div {
+    @include alignement(center);
+    margin: 0;
+    /*padding: 60px;*/
+    //border: 1px solid green;
+  }
+  & h2{
+    font-size: 4rem;
+  }
+  & h3{
+    font-size: 1.5rem;
+    margin:0;
+  }
+  & ul{
+    list-style-type: none;
+    //width: 80%;
+    margin: auto;
+    display: grid;
+    grid-auto-rows: auto;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+  }
+  & li{
+    background: white;
+    height: 200px;
+    //width: 250px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size: 1.5rem;
+    transition: all 1s ease-in-out;
+    &:hover{
+      background: #c8a96a;
+    }
+    &:hover i{
+      color: white;
+      transform: rotateY(360deg);
+    }
+  }
+  & i{
+    color:#c8a96a;
+    font-size: 45px;
+    position: relative;
+    bottom:40px;
+    transition: all 1s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 1200px)
+{
+  .food{
+    height: 100vh;
+    & ul{
+      margin-top: 100px;
+      display:flex;
+      justify-content: space-evenly;
+    }
+    & li {
+      width: 200px;
+    }
+  }
+}
+
+
+@media screen  and (min-width: 992px) and (max-width: 1200px){
+  .food {
+    height: 100vh;
+    & ul {
+      display: grid;
+      grid-template-columns: auto auto auto ;
+      gap: 1rem;
+    }
+  }
+}
+
+
+@media screen  and (min-width: 768px) and (max-width: 992px){
+  .food {
+    height: 100vh;
+    & ul {
+      display: grid;
+      grid-template-columns: auto auto auto ;
+      gap: 1rem;
+    }
+  }
+}
+
+
+@media screen and (min-width: 578px)  and (max-width: 768px) {
+  .food {
+    & ul{
+      margin: 0px;
+      padding: 0px;
+    }
+    display: block;
+     & li{
+       margin: 10px;
+      display: flex;
+       align-items: center;
+       //text-align: center;
+
+
+
+    }
+
+  }
+}

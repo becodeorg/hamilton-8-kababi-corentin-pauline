@@ -1,0 +1,182 @@
+.chef{
+  background: black;
+  //padding: 100px;
+
+  & h2{
+    padding-top: 15px;
+    color: white;
+    @include alignement(center);
+  }
+  & h3{
+    padding-bottom: 15px;
+    color: white;
+    @include alignement(center);
+  }
+  & ul:first-of-type:not(ul.social){
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    //margin: auto;
+  }
+  & figure{
+    position: relative;
+    & img {
+      display: block;
+      &:hover+figcaption  {
+        opacity:0.8;
+        top: 67%;
+      }
+    }
+    & figcaption{
+      opacity: 0;
+      background: black;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      /*top: -134px;*/
+      -webkit-transition:all 1s ease;
+      -moz-transition:all 1s ease;
+      -ms-transition:all 1s ease;
+      -o-transition:all 1s ease;
+      transition:all 1s ease;
+    }
+    & h2{
+      color: white;
+    }
+    & a{
+      float: left;
+      color: white;
+      padding: 2px;
+    }
+
+    & ul.social{
+      display: flex;
+      flex-direction: row;
+      /*align-items: flex-start;*/
+      justify-content: space-evenly;
+    }
+
+  }
+
+
+}
+@media screen and (min-width: 992px) and (max-width: 1440px)
+{
+  .chef{
+    & figure {
+      position: relative;
+      & img {
+        display: block;
+
+        &:hover + figcaption {
+          opacity: 0.8;
+          top: 45%;
+        }
+      }
+    }
+    & ul{
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+
+      /*display: grid;
+      grid-template-columns: auto ;*/
+      /*width: 100%;*/
+    }
+    & figure{
+      margin:0;
+      width: 100%;
+      & img{
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+  .chef{
+    & ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: auto ;
+      /*display: flex;
+      flex-direction: column;
+
+      gap: 60px;*/
+      /*display: grid;
+      grid-template-columns: auto ;*/
+      /*width: 100%;*/
+    }
+    & figure{
+      margin:0;
+      width: 100%;
+
+
+      & img{
+        width: 100%;
+        &:hover + figcaption {
+          opacity: 0.8;
+          top: 83%;
+        }
+      }
+      }
+    }
+  }
+
+@media screen and (min-width: 578px)  and (max-width: 768px) {
+  .chef{
+    background: green;
+    & section:first-of-type{
+      width: 100%;
+    }
+    & ul{
+
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    & li {
+      margin-top: 20px;
+    }
+    & figure{
+      margin:0;
+      width: 100%;
+
+      & img {
+        display: block;
+        width: 100%;
+
+        &:hover + figcaption {
+          opacity: 0.8;
+          top: 80%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .chef{
+    background: cyan;
+    & ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    & figure{
+      margin:0;
+      & img{
+        width: 100%;
+      }
+    }
+  }
+}

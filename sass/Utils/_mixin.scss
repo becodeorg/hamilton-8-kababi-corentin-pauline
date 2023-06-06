@@ -1,4 +1,11 @@
+
 @mixin button($backgroundColor,$mainColor)
 {
 
 }
+
+@mixin alignement($position){
+  text-align: $position;
+}
+
+
