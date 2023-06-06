@@ -94,11 +94,6 @@ a {
     padding-bottom: 15px;
     color: white;
     text-align: center; }
-  .chef ul:first-of-type:not(ul.social) {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    width: 80%; }
   .chef figure {
     position: relative; }
     .chef figure img {
@@ -129,8 +124,16 @@ a {
       flex-direction: row;
       /*align-items: flex-start;*/
       justify-content: space-evenly; }
+      .chef figure ul.social i {
+        font-size: 2rem; }
 
-@media screen and (min-width: 992px) and (max-width: 1440px) {
+@media screen and (min-width: 1200px) {
+  .chef ul:first-of-type:not(ul.social) {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 80%; } }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .chef figure {
     position: relative; }
     .chef figure img {
@@ -141,7 +144,7 @@ a {
   .chef ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-gap: 20px;
     /*display: grid;
     grid-template-columns: auto ;*/
@@ -153,18 +156,12 @@ a {
       width: 100%; } }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .chef ul {
-    margin: 0;
-    padding: 0;
     list-style-type: none;
     display: grid;
-    grid-template-columns: auto;
-      /*display: flex;
-      flex-direction: column;
-
-      gap: 60px;*/
-    /*display: grid;
-    grid-template-columns: auto ;*/
-    /*width: 100%;*/ }
+    grid-template-columns: auto auto;
+    gap: 30px;
+    margin: 0;
+    padding: 0; }
   .chef figure {
     margin: 0;
     width: 100%; }
@@ -174,28 +171,26 @@ a {
         opacity: 0.8;
         top: 83%; } }
 @media screen and (min-width: 578px) and (max-width: 768px) {
-  .chef {
-    background: green; }
-    .chef section:first-of-type {
+  .chef section:first-of-type {
+    width: 100%; }
+  .chef ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .chef li {
+    margin-top: 20px; }
+  .chef figure {
+    margin: 0;
+    width: 100%; }
+    .chef figure img {
+      display: block;
       width: 100%; }
-    .chef ul {
-      margin: 0px;
-      padding: 0px;
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      width: 100%; }
-    .chef li {
-      margin-top: 20px; }
-    .chef figure {
-      margin: 0;
-      width: 100%; }
-      .chef figure img {
-        display: block;
-        width: 100%; }
-        .chef figure img:hover + figcaption {
-          opacity: 0.8;
-          top: 80%; } }
+      .chef figure img:hover + figcaption {
+        opacity: 0.8;
+        top: 80%; } }
 @media screen and (max-width: 480px) {
   .chef {
     background: cyan; }
