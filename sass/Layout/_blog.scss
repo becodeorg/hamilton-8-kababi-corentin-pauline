@@ -1,17 +1,17 @@
 .blog{
 
   & section:first-of-type {
-    height: 100vh;
+    height: 140vh;
 
     width: 80%;
     margin: auto;
     /*display: flex;
     flex-direction: row;*/
-    display: flex;
+    /*display: flex;
    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around;*/
 
-    overflow: hidden;
+    //overflow: hidden;
     margin: auto;
     & a {
       top: 550px;
@@ -31,6 +31,7 @@
      }
 
 }
+
 
 .blog--article--informations{
   display: flex;
@@ -58,48 +59,28 @@
   left: 0px;
 }
 
-  /*
-  .blog--article{
-    margin: 30px;
-    background: rgba(200,169,106,0.1);
-    & div.blog--article--informations{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    & div.blog--article--informations div{
-     // width: 50%;
-      background: green;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
 
-    }
-  }*/
-  /*.blog--article--informations{
-    background: green;
-  }*/
-  /*.blog--icons{
-    height: 20px;
-    width: 20px;
+
+.blog--section {
+  @include screen(large) {
+    display: grid;
+    grid-template-columns: auto auto;
   }
-  .blog--article--author,.blog--article--date{
-    display: flex;
-  }*/
-  /*.blog--article--informations{
+  @include screen(med) {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-  }*/
- /* .blog--article--description {
-    padding: 10px;
+    justify-content: center;
+    background: fuchsia;
+    overflow: hidden;
+    padding: 0px;
   }
-  .blog--article--description p{
-    font-size: 1.5rem;
-    &:hover{
-      color:#c8a96a;
-    }
-  }
+  @include screen(med-small) {
 
-}*/
+  }
+  @include screen(small) {
+
+  }
+  @include screen(custom, max, 400) {
+    width: 100%;
+  }
+}
