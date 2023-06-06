@@ -1,0 +1,30 @@
+.gallery--section figure {
+  margin: 10px;
+  position: relative; }
+  .gallery--section figure figcaption {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 40%;
+    text-align: center;
+    opacity: 0;
+    color: white;
+    transition: opacity 1s ease-in-out; }
+  .gallery--section figure:hover figcaption {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1; }
+
+.gallery--section figure img {
+  width: 100%; }
+
+.gallery--section div:first-of-type {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 0; }
+
+.gallery--section div:last-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 0; }
+
+/*# sourceMappingURL=style.css.map */
