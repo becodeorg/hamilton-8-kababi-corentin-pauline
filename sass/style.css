@@ -1,28 +1,33 @@
 /*
-Error: It's not clear which file to import for '@import "Layout/section2"'.
-       Candidates:
-         Layout/_section2.scss
-         Layout/section2.scss
-       Please delete or rename all but one of these files.
-        on line 8 of sass/style.scss
+Error: Invalid CSS after ">>>>>>> section7": expected "{", was ""
+        on line 62 of sass/Utils/_mixin.scss
+        from line 3 of sass/style.scss
 
-3: @import "Layout/_header.scss";
-4: @import "Layout/_navbar.scss";
-5: @import "Utils/_utils.scss";
-6: @import "Layout/section_chef";
-7: @import "Layout/section_food";
-8: @import "Layout/section2";
-9: 
-10: @import "Layout/section4";
-11: @import "Layout/gallery";
+57:     @content;
+58:   }
+59: 
+60: }
+61: >>>>>>> section7
 
 Backtrace:
-sass/style.scss:8
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+sass/Utils/_mixin.scss:62
+sass/style.scss:3
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
 C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +67,4 @@ C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: It's not clear which file to import for '@import \"Layout/section2\"'.\A        Candidates:\A          Layout/_section2.scss\A          Layout/section2.scss\A        Please delete or rename all but one of these files.\A         on line 8 of sass/style.scss\A \A 3: @import \"Layout/_header.scss\";\A 4: @import \"Layout/_navbar.scss\";\A 5: @import \"Utils/_utils.scss\";\A 6: @import \"Layout/section_chef\";\A 7: @import \"Layout/section_food\";\A 8: @import \"Layout/section2\";\A 9: \A 10: @import \"Layout/section4\";\A 11: @import \"Layout/gallery\";"; }
+  content: "Error: Invalid CSS after \">>>>>>> section7\": expected \"{\", was \"\"\A         on line 62 of sass/Utils/_mixin.scss\A         from line 3 of sass/style.scss\A \A 57:     @content;\A 58:   }\A 59: \A 60: }\A 61: >>>>>>> section7"; }
