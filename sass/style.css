@@ -30,8 +30,40 @@ grid-template-columns: auto auto;
 }*/
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .choose-article div:first-of-type {
+    display: block; }
+
+  .choose-article {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative; }
+    .choose-article p {
+      font-size: 2rem;
+      margin: 0;
+      padding: 0; }
+    .choose-article a {
+      display: block;
+      font-size: 1.2rem;
+      color: white;
+      background: #C8A96A;
+      text-decoration: none;
+      width: 20%;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+      transition: all 1s ease-in-out; }
+      .choose-article a:hover {
+        background: black; }
+    .choose-article figure {
+      margin: 0;
+      padding: 0; }
+      .choose-article figure img {
+        width: 100%; } }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .choose-article div:first-of-type {
     display: flex;
     justify-content: space-around; }
@@ -53,21 +85,23 @@ grid-template-columns: auto auto;
       text-align: center;
       border-radius: 5px;
       position: absolute;
-      /*top:450px;
-      right: 580px;*/
+      top: 70%;
+      left: 55%;
       transition: all 1s ease-in-out; }
       .choose-article a:hover {
         background: black; } }
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .choose-article {
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auto;
     position: relative; }
+    .choose-article div:first-of-type {
+      display: flex;
+      justify-content: space-around; }
     .choose-article p {
-      font-size: 2rem; }
+      font-size: 1.2rem;
+      width: 70%; }
+    .choose-article figure {
+      margin: 0px; }
     .choose-article a {
       color: white;
       background: #C8A96A;
@@ -77,8 +111,9 @@ grid-template-columns: auto auto;
       text-align: center;
       border-radius: 5px;
       position: absolute;
-      left: 43%;
       top: 80%;
+      right: 0;
+      left: 45%;
       transition: all 1s ease-in-out; }
       .choose-article a:hover {
         background: black; } }
@@ -103,7 +138,7 @@ grid-template-columns: auto auto;
       position: absolute;
       top: 70%;
       right: 0;
-      left: 40%;
+      left: 27%;
       transition: all 1s ease-in-out; }
       .choose-article a:hover {
         background: black; } }
