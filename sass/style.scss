@@ -1,7 +1,7 @@
-
+@import "Utils/mixins.scss";
 @import "Utils/_mixin.scss";
 @import "Utils/btn.scss";
-@import 'Utils/_variables.scss';
+@import 'Utils/variables.scss';
 @import "Layout/_header.scss";
 @import "Layout/_navbar.scss";
 @import "Utils/_utils.scss";
@@ -10,13 +10,7 @@
 @import "Layout/_section2.scss";
 @import "Layout/section4.scss";
 @import "Layout/gallery.scss";
-
-@import "Utils/_utils.scss";
-@import "Layout/_blog.scss";
-@import "Layout/_partenaires.scss";
-
-
-@import "Utils/btn";
-
+@import "Layout/_footer.scss";
 @import "Layout/section2_1.scss";
+
 
