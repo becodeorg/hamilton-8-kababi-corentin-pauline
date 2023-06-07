@@ -12,10 +12,12 @@
 }
 */
 .partenaires{
-  margin-left: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   & img.partenaires--img{
     display: block;
     margin-left: 10px;

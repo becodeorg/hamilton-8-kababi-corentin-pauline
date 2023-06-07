@@ -10,10 +10,10 @@ body {
     color: black;
     text-align: center;
     text-transform: capitalize;
-    display: flex;
-    flex-direction: row;
+    @include display-flex-row;
     justify-content: center;
     align-items: center;
+    font-family: $font-family;
     
   }
   & section:first-of-type {
@@ -40,7 +40,7 @@ body {
   background-color: rgba(250,246,240);
   padding: 20px;
   position: relative;
-  @include display-flex-row;
+  font-family: $font-family-text;
      & .blog--article--informations {
        @include display-flex-column;
        justify-content: space-around;
@@ -73,7 +73,6 @@ body {
   top: 40px;
   left: 0px;
 }
-
 
 
 .blog--section {

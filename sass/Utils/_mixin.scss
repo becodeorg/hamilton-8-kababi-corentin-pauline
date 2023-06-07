@@ -47,10 +47,15 @@ $breakpoint-med: 1175px;
   font-size: ($size / 16px) * 1rem;
 }
 
-@mixin display-flex-row(){
+@mixin display-flex-row-SPACE(){
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+@mixin display-flex-row(){
+  display: flex;
+  flex-direction: row;
 }
 
 @mixin display-flex-column(){
