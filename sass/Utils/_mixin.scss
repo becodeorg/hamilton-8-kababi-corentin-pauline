@@ -4,3 +4,14 @@
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(1) invert(0);
 }
+
+@mixin display-flex-row(){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@mixin display-flex-column(){
+  display: flex;
+  flex-direction: column;
+}
