@@ -65,3 +65,16 @@ $breakpoint-med: 1175px;
   border-radius:$radius;
 }
 
+
+@mixin position($top:0,$right:0,$left:0,$bottom:0){
+  top: $top;
+  right: $right;
+
+ // bottom: $bottom;
+  left: $left;
+}
+
+@mixin font-size($size) {
+  font-size:$size;
+}
+
