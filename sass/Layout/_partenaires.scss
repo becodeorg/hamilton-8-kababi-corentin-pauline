@@ -12,16 +12,16 @@
 }
 */
 .partenaires{
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  // row-gap: 8px;
   & img.partenaires--img{
     display: block;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
     filter: grayscale(100%);
     &:hover{
       filter: grayscale(0) ;
