@@ -1,5 +1,13 @@
-.blog{
+body {
+  font-family: 'Forum', cursive;
+  font-family: 'Open Sans', sans-serif;
+}
 
+.blog{
+  & h2, h3 {
+    color: black;
+    text-align: center;
+  }
   & section:first-of-type {
     height: 140vh;
 
@@ -26,10 +34,9 @@
   padding: 20px;
   position: relative;
      & div.blog--article--informations {
-       display: flex;
+       @include display-flex-column;
        justify-content: space-around;
      }
-
 }
 
 

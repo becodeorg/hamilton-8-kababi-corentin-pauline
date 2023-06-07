@@ -40,22 +40,20 @@ $breakpoint-med: 1175px;
       @content;
     }
   }
-
-
-
-  /*@else if $size == 'custom' {
-    @media screen and ($type + -width: $pixels + px) {
-      @content;
-    }
-  }
-*/
-  @else {
-    @content;
-  }
-
 }
 
 @mixin font-size($size) {
   font-size:$size;
   font-size: ($size / 16px) * 1rem;
+}
+
+@mixin display-flex-row(){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@mixin display-flex-column(){
+  display: flex;
+  flex-direction: column;
 }
