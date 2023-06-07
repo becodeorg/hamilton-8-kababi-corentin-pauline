@@ -76,6 +76,46 @@ header{
     display: flex;
     justify-content: flex-end;
   }
+  .phone{
+    display: none;
+  }
+  .navbar{
+    display: none;
+  }
+
+  .navbar-responsive{
+
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    left: 100px;
+    background: black ;
+    z-index: 100;
+    transition: all 1s ease-in-out;
+    ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      & li{
+        padding: 30px;
+        border-bottom: 1px solid gray;
+      }
+      & li a {
+        color: white;
+        transition: color 1s ease-in-out;
+        &:hover{
+          color:#C89C44;
+        }
+      }
+    }
+  }
+  .menu-responsive{
+    &:active+ nav{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
