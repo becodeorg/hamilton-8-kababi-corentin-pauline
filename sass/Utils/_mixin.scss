@@ -1,4 +1,4 @@
-/*
+
 @mixin filter()
 {
   -webkit-filter: brightness(0) invert(1);
@@ -46,7 +46,7 @@ $breakpoint-med: 1175px;
   }
 
 }
-*/ 
+
 @mixin font-size($size) {
   font-size:$size;
   font-size: ($size / 16px) * 1rem;

@@ -1,20 +1,153 @@
-/* Error: Undefined mixin.
- *    ,
- * 72 | /   @include screen(large) {
- * 73 | |     display: grid;
- * 74 | |     grid-template-columns: auto auto;
- * 75 | \   }
- *    '
- *   sass/Layout/_blog.scss 72:3  @import
- *   sass/style.scss 4:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 72 \2502  \250c    @include screen(large) {\a 73 \2502  \2502      display: grid;\a 74 \2502  \2502      grid-template-columns: auto auto;\a 75 \2502  \2514    }\a    \2575 \a   sass/Layout/_blog.scss 72:3  @import\a   sass/style.scss 4:9          root stylesheet";
+.btn {
+  background: white;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 1s ease-in-out;
 }
+.btn:hover {
+  background: #c8a96a;
+}
+
+body {
+  font-family: "Forum", cursive;
+  font-family: "Open Sans", sans-serif;
+}
+
+.blog h2, .blog h3 {
+  color: black;
+  text-align: center;
+}
+.blog section:first-of-type {
+  height: 140vh;
+  width: 80%;
+  margin: auto;
+  /*display: flex;
+  flex-direction: row;*/
+  /*display: flex;
+  flex-direction: row;
+   justify-content: space-around;*/
+  overflow: hidden;
+  margin: auto;
+}
+.blog section:first-of-type a {
+  top: 550px;
+  left: 300px;
+  position: absolute;
+}
+
+.blog--article {
+  background-color: rgba(200, 169, 106, 0.1);
+  padding: 20px;
+  position: relative;
+}
+.blog--article div.blog--article--informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.blog--article--informations {
+  display: flex;
+}
+.blog--article--informations .blog--article--author {
+  display: flex;
+  justify-content: flex-end;
+}
+.blog--article--informations .blog--article--date {
+  display: flex;
+  justify-content: flex-start;
+}
+.blog--article--informations img {
+  width: 10px;
+  height: 10px;
+}
+.blog--article--informations p {
+  margin: 0px;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.position-relative {
+  position: relative;
+  top: 40px;
+  left: 0px;
+}
+
+@media screen and (max-width: 1175px) {
+  .blog--section {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 1175px) {
+  .blog--section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: fuchsia;
+    overflow: hidden;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .blog--section {
+    width: 100%;
+  }
+}
+
+/*
+.partenaires{
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  & img.partenaires--img{
+    filter: grayscale(100%);
+    &:hover{
+      filter: grayscale(0) ;
+    }
+  }
+}
+*/
+.partenaires {
+  margin-left: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.partenaires img.partenaires--img {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  filter: grayscale(100%);
+}
+.partenaires img.partenaires--img:hover {
+  filter: grayscale(0);
+}
+
+@media screen and (max-width: 1175px) {
+  .partenaires {
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media screen and (max-width: 960px) {
+  .partenaires {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 600px) {
+  .partenaires {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .partenaires {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
