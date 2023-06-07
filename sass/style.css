@@ -18,6 +18,24 @@
 .section-4 h2 {
   font-size: 4rem; }
 
+@media only screen and (max-width: 600px) {
+  .section-4 img:last-of-type, .section-4 img:first-of-type {
+    display: none; }
+
+  .section-4-container {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    background: #f9f6f0; }
+    .section-4-container div.section-4-items {
+      margin: 30px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .section-4-container div.section-4-items:hover {
+        border: 4px dotted black; } }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .section-4-container {
     margin: 0px;
