@@ -9,8 +9,6 @@ header{
     display: flex;
     flex-direction: row;
   }
-
-
 }
 .header--nav{
   padding-top:20px;
@@ -55,6 +53,22 @@ header{
 
   //left: 30%;
 }
+  .BookTable{
+    text-decoration: none;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C8A96A ;
+    width: 160px;
+    @include borderRadius(5px);
+    transition: all 1s ease-in-out;
+    &:hover{
+      background: white;
+      color:$mainColor ;
+    }
+  }
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -109,6 +123,14 @@ header{
     }
   }
 
+  header{
+    background: url("../assets/img/slider/img_bg_slider_home01.jpg") no-repeat;
+    background-size:cover;
+    height: 70vh;
+  }
+  .main--heading{
+    font-size: 3rem;
+  }
 
 }
 
@@ -157,6 +179,10 @@ header{
   .navbar{
     display: none;
   }
+  .main--heading{
+    font-size: 5rem;
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -173,9 +199,19 @@ header{
   .navbar-responsive{
     display: none;
   }
+  header{
+    background: url("../assets/img/slider/img_bg_slider_home01.jpg") no-repeat;
+    background-size:cover;
+    height: 90vh;
+  }
 }
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  header{
+    background: url("../assets/img/slider/img_bg_slider_home01.jpg") no-repeat;
+    background-size:cover;
+    height: 100vh;
+  }
 }

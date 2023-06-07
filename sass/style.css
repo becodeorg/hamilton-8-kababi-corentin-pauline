@@ -45,6 +45,20 @@ header {
   width: 50px;
   position: relative; }
 
+.BookTable {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #C8A96A;
+  width: 160px;
+  border-radius: 5px;
+  transition: all 1s ease-in-out; }
+  .BookTable:hover {
+    background: white;
+    color: #C8A96A; }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header--nav {
@@ -82,7 +96,15 @@ header {
 
   .menu-responsive:active + nav {
     opacity: 1;
-    visibility: visible; } }
+    visibility: visible; }
+
+  header {
+    background: url("../assets/img/slider/img_bg_slider_home01.jpg") no-repeat;
+    background-size: cover;
+    height: 70vh; }
+
+  .main--heading {
+    font-size: 3rem; } }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .navbar-responsive {
@@ -114,7 +136,10 @@ header {
     display: none; }
 
   .navbar {
-    display: none; } }
+    display: none; }
+
+  .main--heading {
+    font-size: 5rem; } }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .phone {
@@ -127,8 +152,18 @@ header {
     display: none; }
 
   .navbar-responsive {
-    display: none; } }
+    display: none; }
+
+  header {
+    background: url("../assets/img/slider/img_bg_slider_home01.jpg") no-repeat;
+    background-size: cover;
+    height: 90vh; } }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  header {
+    background: url("../assets/img/slider/img_bg_slider_home01.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh; } }
 .navbar ul {
   list-style-type: none;
   display: flex;

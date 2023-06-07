@@ -2,3 +2,7 @@
   text-align: $position;
 }
 
+@mixin borderRadius($radius)
+{
+  border-radius:$radius;
+}
