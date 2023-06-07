@@ -1,13 +1,13 @@
 
 
-@mixin button($backgroundColor,$mainColor)
-{
+@mixin button($backgroundColor,$mainColor) {
 
 }
 
 @mixin alignement($position){
   text-align: $position;
 }
+
 
 
 
@@ -74,3 +74,22 @@ $breakpoint-med: 1175px;
   display: flex;
   flex-direction: column;
 }
+
+@mixin borderRadius($radius)
+{
+  border-radius:$radius;
+}
+
+
+@mixin position($top:0,$right:0,$left:0,$bottom:0){
+  top: $top;
+  right: $right;
+
+ // bottom: $bottom;
+  left: $left;
+}
+
+@mixin font-size($size) {
+  font-size:$size;
+}
+

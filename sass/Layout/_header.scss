@@ -9,13 +9,12 @@ header{
     display: flex;
     flex-direction: row;
   }
-
-
 }
 .header--nav{
   padding-top:20px;
   width: 70%;
   display: flex;
+  justify-content: right;
   /*justify-content: space-between;*/
 
 }
@@ -28,8 +27,10 @@ header{
   color: white;
   font-weight: 400;
   text-transform: uppercase;
- font-size: 3rem;
+ font-size: 6rem;
   margin: 30px;
+  position: relative;
+  top:20px;
 }
 
 .main--heading+a{
@@ -46,9 +47,28 @@ header{
 
 .menu-responsive{
   filter : invert(100%);
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
+  position: relative;
+
+  //left: 30%;
 }
+  .BookTable{
+    text-decoration: none;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C8A96A ;
+    width: 160px;
+    @include borderRadius(5px);
+    transition: all 1s ease-in-out;
+    &:hover{
+      background: white;
+      color:$mainColor ;
+    }
+  }
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -56,21 +76,153 @@ header{
     display: flex;
     justify-content: flex-end;
   }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
   .phone{
     display: none;
   }
   .navbar{
     display: none;
   }
+
+  .navbar-responsive{
+
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    left: 100px;
+    background: black ;
+    z-index: 100;
+    transition: all 1s ease-in-out;
+    ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      & li{
+        padding: 30px;
+        border-bottom: 1px solid gray;
+      }
+      & li a {
+        color: white;
+        transition: color 1s ease-in-out;
+        &:hover{
+          color:#C89C44;
+        }
+      }
+    }
+  }
+  .menu-responsive{
+    &:active+ nav{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .phone{
+    display: none;
+  }
+  .navbar{
+    display: none;
+  }
+
+
+  .navbar-responsive{
+
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    left: 100px;
+    background: black ;
+    z-index: 100;
+    transition: all 1s ease-in-out;
+    ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      & li{
+        padding: 30px;
+        border-bottom: 1px solid gray;
+      }
+      & li a {
+        color: white;
+        transition: color 1s ease-in-out;
+        &:hover{
+          color:#C89C44;
+        }
+      }
+    }
+  }
+
+  .menu-responsive{
+    &:active+ nav{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  header{
+    background: url("../assets/img/slider/img_bg_slider_home01.jpg") no-repeat;
+    background-size:cover;
+    height: 70vh;
+  }
+  .main--heading{
+    font-size: 3rem;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+.navbar-responsive{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  left: 100px;
+  background: black ;
+  transition: all 1s ease-in-out;
+  ul{
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+    & li{
+      padding: 30px;
+      border-bottom: 1px solid gray;
+    }
+    & li a {
+      color: white;
+      transition: color 1s ease-in-out;
+      &:hover{
+        color:#C89C44;
+      }
+    }
+  }
+}
+
+
+  .menu-responsive{
+      //left: 20%;
+      &:active+ nav{
+        opacity: 1;
+        visibility: visible;
+      }
+  }
+
+  .phone{
+    display: none;
+  }
+  .navbar{
+    display: none;
+  }
+  .main--heading{
+    font-size: 5rem;
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -87,9 +239,19 @@ header{
   .navbar-responsive{
     display: none;
   }
+  header{
+    background: url("../assets/img/slider/img_bg_slider_home01.jpg") no-repeat;
+    background-size:cover;
+    height: 90vh;
+  }
 }
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  header{
+    background: url("../assets/img/slider/img_bg_slider_home01.jpg") no-repeat;
+    background-size:cover;
+    height: 100vh;
+  }
 }
