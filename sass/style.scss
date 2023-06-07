@@ -1,14 +1,14 @@
 
-@import "Utils/btn";
-@import "Utils/_mixin";
+@import "Utils/btn.scss";
+@import "Utils/_mixin.scss";
 @import "Layout/_header.scss";
 @import "Layout/_navbar.scss";
 @import "Utils/_utils.scss";
-@import "Layout/section_chef";
-@import "Layout/section_food";
-@import "Layout/section2";
-@import "Layout/section4";
-@import "Layout/gallery";
+@import "Layout/section_chef.scss";
+@import "Layout/section_food.scss";
+@import "Layout/_section2.scss";
+@import "Layout/section4.scss";
+@import "Layout/gallery.scss";
 @import "Utils/_mixin.scss";
 @import "Utils/_utils.scss";
 @import "Layout/_blog.scss";
